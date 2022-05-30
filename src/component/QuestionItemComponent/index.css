@@ -1,0 +1,17 @@
+.black {
+    color: #3f3f3f
+}
+
+.red {
+    color: #cc0000
+}
+
+.green {
+    color: #00aa00
+}
+
+.option-item {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+}
