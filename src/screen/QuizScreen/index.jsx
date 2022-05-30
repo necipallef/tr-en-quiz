@@ -43,6 +43,13 @@ export function QuizScreen() {
         return (
             <div className='question-container'>
                 <p>Score: {correctCount}/{questions.length}</p>
+                {
+                    correctCount === questions.length ?
+                        <p>WINNER WINNER CHICKEN DINNER</p> :
+                        Math.abs(correctCount - questions.length) < 3 ?
+                            <p>ALMOST :)</p> :
+                            null
+                }
             </div>
         )
     }
