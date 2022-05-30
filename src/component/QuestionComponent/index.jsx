@@ -14,13 +14,17 @@ export function QuestionComponent(props) {
     const [answer, setAnswer] = useState(null);
 
     function onOptionClicked(option) {
+        if (answer) {
+            return
+        }
+
         setAnswer(option)
         props.onAnswer(option.value)
     }
 
     return (
         <div>
-            <p className='question-text'>{props.question.text}</p>
+            <p className='question-text'>{props.currentQuestionIndex + 1}. {props.question.text}</p>
             <div>
                 {props.question.options.map((option, index) => {
                     return (

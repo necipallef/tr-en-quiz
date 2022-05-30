@@ -85,7 +85,7 @@ export function getQuestions() {
             ]
         },
         {
-            text: 'piller',
+            text: 'pillar',
             options: [
                 {
                     text: 'manzara',

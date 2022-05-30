@@ -52,6 +52,7 @@ export function QuizScreen() {
             <QuestionComponent
                 key={questions[currentQuestionIndex].text}
                 question={questions[currentQuestionIndex]}
+                currentQuestionIndex={currentQuestionIndex}
                 onAnswer={onAnswer}/>
             {
                 hasAnswered !== true ? null :
